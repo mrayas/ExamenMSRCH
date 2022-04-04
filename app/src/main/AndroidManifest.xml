@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mario.rayas">
+
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_api_key" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_menu_posicion" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="Servidor Smart Location" />
+
+
+
+
+
+        <activity android:name="com.mario.rayas.activities.Login"  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mario.rayas.activities.MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.mario.rayas.activities.Mapa"
+            android:label="Mapa"
+            android:parentActivityName="com.mario.rayas.activities.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mario.rayas.activities.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="com.mario.rayas.activities.MapActivity"
+            android:label="Mapa"
+            android:parentActivityName="com.mario.rayas.activities.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mario.rayas.activities.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="com.mario.rayas.activities.RegisterActivity"
+            android:label="Registro"
+            android:parentActivityName="com.mario.rayas.activities.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mario.rayas.activities.MainActivity" />
+        </activity>
+
+
+        <!--Para envio de correo -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.ryac.smartlocation.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

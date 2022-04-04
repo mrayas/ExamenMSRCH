@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1093811895657",
+    "firebase_url": "https://smartlocationpush.firebaseio.com",
+    "project_id": "smartlocationpush",
+    "storage_bucket": "smartlocationpush.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1093811895657:android:40a1c3a90849da6a",
+        "android_client_info": {
+          "package_name": "com.ryac.smartlocation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1093811895657-a5ko06jdq28oh77mbcgasgr2r7gmmqru.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ryac.smartlocation",
+            "certificate_hash": "ec420ee51eec6f124f9fb94ae4b688251d0ac7c1"
+          }
+        },
+        {
+          "client_id": "1093811895657-042idqhkh9uibs373lnnem4pr4oo576v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2pvp4VhFgZv-hDXfRItcga1DtAtT1_s0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1093811895657-042idqhkh9uibs373lnnem4pr4oo576v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

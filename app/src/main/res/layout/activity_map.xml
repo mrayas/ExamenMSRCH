@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <fragment
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        tools:context="com.mario.rayas.activities.MapsActivity">
+    </fragment>
+
+    <android.support.v7.widget.CardView
+        android:visibility="gone"
+        android:layout_marginTop="60dp"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:id="@+id/cvInformacion">
+
+
+
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:inputType="textMultiLine"
+                android:lines="2"
+                android:id="@+id/txtInformacion"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:textSize="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fabMenuMapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end"
+        fab:fab_addButtonColorNormal="?attr/colorPrimary"
+        fab:fab_addButtonSize="normal">
+
+
+
+        <!--<com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabLimpia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            fab:fab_colorNormal="?attr/colorAccent"
+            fab:fab_icon="@android:drawable/ic_menu_delete"
+            fab:fab_size="mini"
+            fab:fab_title="Limpia" />-->
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabCierra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="?attr/colorAccent"
+            fab:fab_icon="@android:drawable/ic_menu_revert"
+            fab:fab_size="mini"
+            fab:fab_title="Cierra" />
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</RelativeLayout>
+

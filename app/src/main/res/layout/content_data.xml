@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginRight="48dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp" />
+        <TextView
+            android:id="@+id/tvApellidos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvNombre"
+            android:layout_marginRight="48dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp" />
+
+        <TextView
+            android:id="@+id/tvTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvApellidos"
+            android:layout_marginRight="48dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp" />
+
+        <TextView
+            android:id="@+id/tvCorreo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvTelefono"
+            android:layout_marginRight="48dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp" />
+        <TextView
+            android:id="@+id/tvLink"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvCorreo"
+            android:layout_marginRight="48dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp" />
+
+        <ImageView
+            android:id="@+id/iFoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvLink"
+            android:layout_marginRight="48dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp"
+            android:src="@drawable/ind" />
+
+
+
+
+
+    </RelativeLayout>
+</LinearLayout>
+
+

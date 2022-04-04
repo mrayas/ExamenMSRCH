@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Test Mario Rayas</string>
+    <string name="main_name">Menú</string>
+    <string name="google_map_api_key">GoogleApiKey</string>
+    <string name="prompt_usuario">Usuario</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Login</string>
+
+
+    <string name="nav_header_title">By Mario Sergio Rayas Chavez</string>
+    <string name="nav_header_subtitle">mario@ryac.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Salir</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

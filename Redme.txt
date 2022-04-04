@@ -1,0 +1,3 @@
+Desarrollado en Android Studio
+Utiliza SQLLite
+Los datos y las imagenes (base 64)
